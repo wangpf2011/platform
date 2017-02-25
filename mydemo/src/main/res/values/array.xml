@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="station_type">
+    <item>01_国营充电站</item>
+    <item>02_民营充电站</item>
+    <item>03_个人充电站</item>
+    <item>05_公交车专用站</item>
+    <item>06_出租车专用站</item>
+    <item>07_个人专用站</item>
+  </string-array>
+  <string-array name="station_status">
+    <item>0_在建</item>
+    <item>1_投运</item>
+    <item>2_停运</item>
+  </string-array>
+  <string-array name="station_order">
+    <item>1_支持</item>
+    <item>2_不支持</item>
+  </string-array>
+</resources>
