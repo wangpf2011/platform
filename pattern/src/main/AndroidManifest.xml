@@ -1,4 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lnint.pattern">
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lnint.pattern">
 
     <application android:allowBackup="true" android:label="@string/app_name"
         android:supportsRtl="true">

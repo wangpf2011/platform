@@ -15,3 +15,11 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+#-----------处理实体类---------------
+# 在开发的时候我们可以将所有的实体类放在一个包内，这样我们写一次混淆就行了。
+-keep public class com.lnint.pattern.entity.** {
+    public void set*(***);
+    public *** get*();
+    public *** is*();
+}

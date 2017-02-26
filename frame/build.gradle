@@ -31,5 +31,4 @@ dependencies {
     compile files('../libs/org.apache.http.legacy.jar')
     compile files('../libs/picasso-2.4.0.jar')
     compile project(':citypicker')
-    compile project(':pattern')
 }
