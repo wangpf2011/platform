@@ -20,7 +20,7 @@ public class SuccessActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setContentView(R.layout.activity_login);
+        this.setContentView(R.layout.activity_success);
         title = (TextView) this.findViewById(R.id.txt_title);
         title.setText("登陆成功");
     }

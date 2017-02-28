@@ -28,6 +28,7 @@ public class LoginNet {
      * @return RespInfo
      */
     public RespInfo appLogin(User user) {
+        String https = "http://139.129.196.51/evcg2/";
         RespInfo resp = new RespInfo();
 
         RequestParams params = new RequestParams();
@@ -37,7 +38,7 @@ public class LoginNet {
         http.configCurrentHttpCacheExpiry(1000 * 10); //设置超时时间
         try {
             ResponseStream responseStream = http.sendSync(HttpRequest.HttpMethod.POST ,
-                    AppHelper.HTTPRUL + "app/login",
+                    https + "app/login",
                     params);
             String msg = responseStream.readString();
             JSONObject jsonObject = new JSONObject(msg);

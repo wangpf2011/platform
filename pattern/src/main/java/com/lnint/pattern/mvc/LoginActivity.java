@@ -1,13 +1,16 @@
 package com.lnint.pattern.mvc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lnint.common.ActivityCollection;
+import com.lnint.common.AppHelper;
 import com.lnint.common.BaseActivity;
 import com.lnint.common.CustomHandler;
 import com.lnint.common.progressdialog.CustomProgressDialog;
@@ -39,8 +42,43 @@ public class LoginActivity extends BaseActivity {
         title = (TextView) this.findViewById(R.id.txt_title);
         title.setText("用户登陆");
         mUserName = (EditText) this.findViewById(R.id.ed_username);
-        mPassword = (EditText) this.findViewById(R.id.ed_username);
+        mPassword = (EditText) this.findViewById(R.id.ed_password);
         initHandler();
+
+        Button login = (Button) this.findViewById(R.id.btn_login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(StringUtils.isEmpty(mUserName.getText().toString())) {
+                    Toast.makeText(LoginActivity.this, "请填写用户名", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(StringUtils.isEmpty(mPassword.getText().toString())) {
+                    Toast.makeText(LoginActivity.this, "请填写密码", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                dialog = CustomProgressDialog.createDialog(LoginActivity.this);
+                dialog.setMessage("请稍后……");
+                dialog.show();
+                final User user = new User();
+                user.setUsername(mUserName.getText().toString());
+                user.setPassword(mPassword.getText().toString());
+                Thread thread = new Thread() {
+                    @Override
+                    public void run() {
+                        LoginNet loginNet = new LoginNet();
+                        RespInfo resp = loginNet.appLogin(user);
+                        if("true".equals(resp.getSuccess())) {//登录OK
+                            msgHandler.obtainMessage(MSG_SUCCESS, "登陆成功").sendToTarget();
+                        }else {
+                            msgHandler.obtainMessage(MSG_ERROR, resp.getMessage()).sendToTarget();
+                        }
+                    }
+                };
+                thread.start();
+            }
+        });
     }
 
     /**
@@ -56,54 +94,21 @@ public class LoginActivity extends BaseActivity {
                         case MSG_SUCCESS:
                             if(dialog != null) dialog.dismiss();
                             if(msg.obj != null) {
-                                Toast.makeText(LoginActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT);
+                                Toast.makeText(outer, msg.obj.toString(), Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(LoginActivity.this, SuccessActivity.class);
+                                startActivity(intent);
                             }
                             break;
                         case MSG_ERROR:
                             if(dialog != null) dialog.dismiss();
                             if(msg.obj != null) {
-                                Toast.makeText(LoginActivity.this, msg.obj.toString(), Toast.LENGTH_SHORT);
+                                Toast.makeText(outer, msg.obj.toString(), Toast.LENGTH_SHORT).show();
                             }
                             break;
                     }
                 }
             }
         };
-    }
-
-    /**
-     * 登陆
-     * @param view
-     */
-    public void login(View view) {
-        if(StringUtils.isEmpty(mUserName.getText().toString())) {
-            Toast.makeText(LoginActivity.this, "请填写用户名", Toast.LENGTH_SHORT);
-            return;
-        }
-        if(StringUtils.isEmpty(mPassword.getText().toString())) {
-            Toast.makeText(LoginActivity.this, "请填写密码", Toast.LENGTH_SHORT);
-            return;
-        }
-
-        dialog = CustomProgressDialog.createDialog(LoginActivity.this);
-        dialog.setMessage("请稍后……");
-        dialog.show();
-        final User user = new User();
-        user.setUsername(mUserName.getText().toString());
-        user.setPassword(mPassword.getText().toString());
-        Thread thread = new Thread() {
-            @Override
-            public void run() {
-                LoginNet loginNet = new LoginNet();
-                RespInfo resp = loginNet.appLogin(user);
-                if("true".equals(resp.getSuccess())) {//登录OK
-                    msgHandler.obtainMessage(MSG_ERROR, "登陆成功").sendToTarget();
-                }else {
-                    msgHandler.obtainMessage(MSG_ERROR, "登陆失败").sendToTarget();
-                }
-            }
-        };
-        thread.start();
     }
 
     @Override

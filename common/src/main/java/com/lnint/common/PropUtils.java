@@ -13,7 +13,7 @@ public class PropUtils {
         Properties props = new Properties();
         //InputStream in = PropUtils.class.getResourceAsStream("/netconfig.properties");
         //props.load(MainApplication.getInstance().getResources().openRawResource(R.raw.netconfig));
-		InputStream inStream = PropUtils.class.getClassLoader().getResourceAsStream("test.properties");
+		InputStream inStream = PropUtils.class.getClassLoader().getResourceAsStream("netconfig.properties");
 		props.load(inStream);
         return props;
     }

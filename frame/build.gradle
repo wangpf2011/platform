@@ -26,8 +26,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile project(':pickerview')
     compile project(':mydemo')
-    compile project(':utils')
-    compile project(':common')
     compile files('../libs/picasso-2.4.0.jar')
     compile project(':citypicker')
+    compile project(':pattern')
 }

@@ -179,6 +179,10 @@
 
 #-----------处理第三方依赖库---------
 
+# xUtils
+-dontwarn com.lidroid.xutils.**
+-keep class com.lidroid.xutils.** { *; }
+
 # FastJson
 -dontwarn com.alibaba.fastjson.**
 -keep class com.alibaba.fastjson.** { *; }
