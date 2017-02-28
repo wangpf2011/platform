@@ -26,7 +26,7 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.lnint.frame.R;
-import com.lnint.frame.utils.AppHelper;
+import com.lnint.common.AppHelper;
 import com.lnint.common.progressdialog.CustomProgressDialog;
 import com.lnint.utils.StringUtils;
 import com.lnint.utils.XmlUtils;

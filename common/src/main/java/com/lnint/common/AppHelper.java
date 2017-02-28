@@ -1,4 +1,4 @@
-package com.lnint.frame.utils;
+package com.lnint.common;
 
 public class AppHelper {
 	public static String UserId="";	

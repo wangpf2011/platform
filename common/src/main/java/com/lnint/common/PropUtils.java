@@ -1,8 +1,6 @@
-package com.lnint.frame.utils;
+package com.lnint.common;
 
-import com.lnint.frame.MainApplication;
-import com.lnint.frame.R;
-
+import java.io.InputStream;
 import java.util.Properties;
 
 public class PropUtils {
@@ -14,7 +12,9 @@ public class PropUtils {
     public static Properties getConfigProp() throws Exception {   
         Properties props = new Properties();
         //InputStream in = PropUtils.class.getResourceAsStream("/netconfig.properties");
-        props.load(MainApplication.getInstance().getResources().openRawResource(R.raw.netconfig));
+        //props.load(MainApplication.getInstance().getResources().openRawResource(R.raw.netconfig));
+		InputStream inStream = PropUtils.class.getClassLoader().getResourceAsStream("test.properties");
+		props.load(inStream);
         return props;
     }
     

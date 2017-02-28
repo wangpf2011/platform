@@ -135,31 +135,4 @@ public class MainApplication extends Application {
 		}
 		return netType;
 	}
-
-  /**
-   * 保存Activity，退出应用及返回时使用
-   */
-	public List<Activity> mList = new LinkedList<Activity>();
-	
-	public void addActivity(Activity activity) {
-		  mList.add(activity);
-	}
-
-	public void removeActivity(Activity activity) {
-		  mList.remove(activity);
-	}
-
-	public void exit() {
-		try {
-			//finish所有Activity
-			for(Activity activity : mList) {
-				if (activity != null)
-					activity.finish();
-			}
-		}catch(Exception e) {
-			e.printStackTrace();
-		}finally {
-			System.exit(0);
-		}
-	}
 }

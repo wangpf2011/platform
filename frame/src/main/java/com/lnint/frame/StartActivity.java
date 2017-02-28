@@ -7,7 +7,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import com.lnint.frame.R;
-import com.lnint.frame.common.BaseActivity;
+import com.lnint.common.BaseActivity;
 import com.lnint.frame.tab.MainTabActivity;
 import com.lnint.mydemo.fragment.DynamicFragment2Activity;
 import com.lnint.mydemo.fragment.StaticFragmentActivity;
@@ -47,6 +47,7 @@ public class StartActivity extends BaseActivity {
 	private void initial() {
 		Intent intent = new Intent();
 		intent.setClass(StartActivity.this, MainTabActivity.class);
+		//intent.setClass(StartActivity.this, SQLiteActivity.class);
 		startActivity(intent);
 		this.finish();
 	}
