@@ -6,7 +6,6 @@ package com.lnint.pattern.entity;
  */
 
 public class User {
-
     private String username;
     private String password;
 
