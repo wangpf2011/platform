@@ -11,6 +11,7 @@ import com.lnint.pattern.entity.RespInfo;
 import com.lnint.pattern.entity.User;
 import com.lnint.utils.HttpCookieStore;
 
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONObject;
 
 /**
@@ -26,28 +27,25 @@ public class LoginNet {
      * @param user
      * @return RespInfo
      */
-    public RespInfo saveStakeInfo(User user) {
+    public RespInfo appLogin(User user) {
         RespInfo resp = new RespInfo();
 
         RequestParams params = new RequestParams();
         params.addBodyParameter("username", user.getUsername());
         params.addBodyParameter("password", user.getPassword());
-
         HttpUtils http = new HttpUtils();
-        http.configCookieStore(HttpCookieStore.cookieStore);
         http.configCurrentHttpCacheExpiry(1000 * 10); //设置超时时间
         try {
             ResponseStream responseStream = http.sendSync(HttpRequest.HttpMethod.POST ,
-                    AppHelper.HTTPRUL + "a/app/stake/bind/save",
+                    AppHelper.HTTPRUL + "app/login",
                     params);
-            //int statusCode = responseStream.getStatusCode();
-            //Header[] headers = responseStream.getBaseResponse().getAllHeaders();
             String msg = responseStream.readString();
             JSONObject jsonObject = new JSONObject(msg);
             String success = jsonObject.getString("success");
             if("true".equals(success)) {//登录OK
                 resp.setSuccess("true");
-                resp.setData(jsonObject.getString("stakeno"));
+                DefaultHttpClient dh = (DefaultHttpClient)http.getHttpClient();
+                HttpCookieStore.cookieStore = dh.getCookieStore();
             }else {
                 resp.setSuccess("false");
                 resp.setMessage(jsonObject.getString("message"));
