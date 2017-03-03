@@ -14,6 +14,14 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        jcenter() //bintray的maven库
+        mavenCentral() //sonatype的maven库
+        mavenLocal() //本地的maven库
+        maven {
+            url "https://www.jitpack.io" //jitpack的maven库
+        }
+        flatDir {
+            dirs 'libs' //本地aar文件
+        }
     }
 }
