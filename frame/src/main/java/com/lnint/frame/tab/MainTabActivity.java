@@ -1,6 +1,5 @@
 package com.lnint.frame.tab;
 
-import com.lidroid.xutils.view.annotation.ContentView;
 import com.lnint.frame.R;
 import com.lnint.frame.tab.fragment.FragmentHome;
 import com.lnint.frame.tab.fragment.FragmentMessage;

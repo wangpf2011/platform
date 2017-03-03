@@ -14,8 +14,6 @@ public class FragmentHome extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_home, null );
-		
-		Toast.makeText(getActivity(), "FragmentHome==onCreateView", Toast.LENGTH_LONG).show();
 
 		return view;
 	}

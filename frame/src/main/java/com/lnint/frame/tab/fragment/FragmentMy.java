@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.lnint.androidpicker.MainPickerActivity;
 import com.lnint.citypicker.CityPickerActivity;
 import com.lnint.frame.R;
 import com.lnint.pattern.PatternMainActivity;
@@ -34,6 +35,16 @@ public class FragmentMy extends Fragment {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(getActivity(), PatternMainActivity.class);
+				startActivity(intent);
+			}
+		});
+
+		//选择器示例
+		Button picker = (Button)view.findViewById(R.id.btn_picker);
+		picker.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getActivity(), MainPickerActivity.class);
 				startActivity(intent);
 			}
 		});
