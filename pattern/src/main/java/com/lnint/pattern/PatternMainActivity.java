@@ -7,7 +7,8 @@ import android.widget.TextView;
 
 import com.lnint.common.ActivityCollection;
 import com.lnint.common.BaseActivity;
-import com.lnint.pattern.mvc.LoginActivity;
+import com.lnint.pattern.mvp.view.LoginMVPActivity;
+import com.lnint.pattern.mvvm.view.LoginMVVMActivity;
 
 /**
  * 模式Demo主界面
@@ -29,7 +30,7 @@ public class PatternMainActivity extends BaseActivity {
      * @param view
      */
     public void patternMVC(View view) {
-        Intent intent = new Intent(PatternMainActivity.this, LoginActivity.class);
+        Intent intent = new Intent(PatternMainActivity.this, com.lnint.pattern.mvc.LoginActivity.class);
         startActivity(intent);
     }
 
@@ -38,7 +39,8 @@ public class PatternMainActivity extends BaseActivity {
      * @param view
      */
     public void patternMVP(View view) {
-
+        Intent intent = new Intent(PatternMainActivity.this, LoginMVPActivity.class);
+        startActivity(intent);
     }
 
     /**
@@ -46,7 +48,8 @@ public class PatternMainActivity extends BaseActivity {
      * @param view
      */
     public void patternMVVM(View view) {
-
+        Intent intent = new Intent(PatternMainActivity.this, LoginMVVMActivity.class);
+        startActivity(intent);
     }
 
     /**

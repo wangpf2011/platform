@@ -1,4 +1,4 @@
-package com.lnint.pattern.entity;
+package com.lnint.pattern.mvc;
 
 /**
  * 用户实体

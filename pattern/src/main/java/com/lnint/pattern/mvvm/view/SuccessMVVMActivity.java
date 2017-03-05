@@ -1,4 +1,4 @@
-package com.lnint.pattern.mvc;
+package com.lnint.pattern.mvvm.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +13,7 @@ import com.lnint.pattern.R;
  * Created by wangpf on 2017/2/28.
  */
 
-public class SuccessActivity extends BaseActivity {
+public class SuccessMVVMActivity extends BaseActivity {
     private TextView title;
 
     @Override

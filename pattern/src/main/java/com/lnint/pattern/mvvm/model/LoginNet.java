@@ -1,4 +1,4 @@
-package com.lnint.pattern.mvc;
+package com.lnint.pattern.mvvm.model;
 
 import android.util.Log;
 
@@ -12,7 +12,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONObject;
 
 /**
- * MVC的Model层
+ * MVVM的Model层
  * Created by wangpf on 2017/2/28.
  */
 

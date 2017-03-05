@@ -28,6 +28,5 @@ dependencies {
     compile project(':mydemo')
     compile files('../libs/picasso-2.4.0.jar')
     compile project(':citypicker')
-    compile project(':pattern')
     compile project(':androidpicker')
 }

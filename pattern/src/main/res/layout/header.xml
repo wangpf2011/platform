@@ -20,6 +20,7 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:gravity="center"
+        android:text="用户登录"
         android:textSize="18sp"
         android:textColor="#ffffff" />
     <ImageView

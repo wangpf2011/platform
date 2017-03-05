@@ -11,7 +11,6 @@ import android.widget.Button;
 import com.lnint.androidpicker.MainPickerActivity;
 import com.lnint.citypicker.CityPickerActivity;
 import com.lnint.frame.R;
-import com.lnint.pattern.PatternMainActivity;
 
 public class FragmentMy extends Fragment {
 
@@ -30,14 +29,14 @@ public class FragmentMy extends Fragment {
 		});
 
 		//设计模式
-		Button pattern = (Button)view.findViewById(R.id.btn_pattern);
+		/*Button pattern = (Button)view.findViewById(R.id.btn_pattern);
 		pattern.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(getActivity(), PatternMainActivity.class);
 				startActivity(intent);
 			}
-		});
+		});*/
 
 		//选择器示例
 		Button picker = (Button)view.findViewById(R.id.btn_picker);

@@ -10,13 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lnint.common.ActivityCollection;
-import com.lnint.common.AppHelper;
 import com.lnint.common.BaseActivity;
 import com.lnint.common.CustomHandler;
 import com.lnint.common.progressdialog.CustomProgressDialog;
 import com.lnint.pattern.R;
-import com.lnint.pattern.entity.RespInfo;
-import com.lnint.pattern.entity.User;
 import com.lnint.utils.StringUtils;
 
 /**
@@ -38,7 +35,7 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setContentView(R.layout.activity_login);this.setContentView(R.layout.activity_login);
+        this.setContentView(R.layout.activity_login);
         title = (TextView) this.findViewById(R.id.txt_title);
         title.setText("用户登陆");
         mUserName = (EditText) this.findViewById(R.id.ed_username);

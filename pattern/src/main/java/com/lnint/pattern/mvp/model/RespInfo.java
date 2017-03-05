@@ -1,4 +1,4 @@
-package com.lnint.pattern.entity;
+package com.lnint.pattern.mvp.model;
 
 /**
  * 网络请求返回bean

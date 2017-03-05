@@ -1,4 +1,4 @@
-package com.lnint.pattern.mvc;
+package com.lnint.pattern.mvp.model;
 
 import android.util.Log;
 
@@ -12,11 +12,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONObject;
 
 /**
- * MVC的Model层
+ * MVP的Model层 --  实现类
  * Created by wangpf on 2017/2/28.
  */
 
-public class LoginNet {
+public class LoginNet implements ILoginNet {
     /**
      * 用户登陆
      *
