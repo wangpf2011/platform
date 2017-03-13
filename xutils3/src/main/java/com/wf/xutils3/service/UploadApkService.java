@@ -64,7 +64,6 @@ public class UploadApkService extends Service {
         manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
     }
 
-
     /**
      * 下载
      *
