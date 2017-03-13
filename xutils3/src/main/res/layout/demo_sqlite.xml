@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header"/>
+    <Button
+        android:text="插入数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveData"
+        android:id="@+id/btn_save" />
+
+    <Button
+        android:text="查询数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="findData"
+        android:id="@+id/btn_find" />
+    <ListView
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#C3BEBA"
+        android:dividerHeight="1px"
+        android:scrollbars="none">
+    </ListView>
+</LinearLayout>
