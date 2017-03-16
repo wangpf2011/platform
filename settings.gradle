@@ -1,1 +1,1 @@
-include ':frame', ':pickerview', ':mydemo', ':utils', ':common', ':citypicker', ':pattern', ':androidpicker', ':library:Commons', ':library:ColorPicker', ':library:FilePicker', ':library:ImagePicker', ':library:WheelPicker', ':xutils3'
+include ':frame', ':pickerview', ':mydemo', ':utils', ':common', ':citypicker', ':pattern', ':androidpicker', ':library:Commons', ':library:ColorPicker', ':library:FilePicker', ':library:ImagePicker', ':library:WheelPicker', ':xutils3', ':testcase'
