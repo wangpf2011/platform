@@ -10,6 +10,9 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.assertEquals;
 
 /**
+ * android studio 2.2单元测试
+ * http://blog.csdn.net/da_caoyuan/article/details/53841977?fps=1&locationNum=5
+ *
  * Instrumentation test, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
