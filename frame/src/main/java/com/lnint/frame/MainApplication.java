@@ -21,7 +21,6 @@ import java.util.List;
  * @date:2014年11月21日 上午11:27:01
  * @version : v1.0
  */
-@SuppressWarnings("deprecation")
 public class MainApplication extends Application {
 	public static final int NETTYPE_WIFI = 0x01;
 	public static final int NETTYPE_CMWAP = 0x02;
