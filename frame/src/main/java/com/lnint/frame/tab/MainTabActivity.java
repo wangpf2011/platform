@@ -26,8 +26,7 @@ public class MainTabActivity extends FragmentActivity {
 			FragmentMy.class };
 
 	// tab选中背景 drawable 样式图片 背景都是同一个,背景颜色都是 白色。。。
-	private Integer[] StyleTab = { R.color.white, R.color.white, R.color.white,
-			R.color.white };
+	private Integer[] StyleTab = { R.color.white, R.color.white, R.color.white};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
