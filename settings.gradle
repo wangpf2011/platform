@@ -1,1 +1,1 @@
-include ':frame', ':pickerview', ':mydemo', ':utils', ':common', ':citypicker', ':androidpicker', ':library:Commons', ':library:ColorPicker', ':library:FilePicker', ':library:ImagePicker', ':library:WheelPicker'
+include ':pickerview', ':citypicker', ':library:Commons', ':library:ColorPicker', ':library:FilePicker', ':library:ImagePicker', ':library:WheelPicker', ':app', ':example', ':corelib'

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lnint.example">
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".fragment.StaticFragmentActivity"/>
+        <activity android:name=".fragment.DynamicFragment1Activity"/>
+        <activity android:name=".fragment.DynamicFragment2Activity"/>
+
+        <!-- SQL数据库操作demo-->
+        <activity android:name=".sqlite.SQLiteActivity"/>
+    </application>
+
+</manifest>
