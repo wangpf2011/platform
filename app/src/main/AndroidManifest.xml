@@ -52,7 +52,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".tab.MainTabActivity"/>
+        <activity android:name=".MainTabActivity"/>
 
         <meta-data android:name="com.amap.api.v2.apikey" android:value="ee2af66268f801637aa50a6e8589155e"/>
 

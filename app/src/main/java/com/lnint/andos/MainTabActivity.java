@@ -1,4 +1,4 @@
-package com.lnint.andos.tab;
+package com.lnint.andos;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -8,7 +8,7 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.lnint.andos.R;
+import com.lnint.andos.tab.TabFragmentHost;
 import com.lnint.andos.tab.fragment.FragmentHome;
 import com.lnint.andos.tab.fragment.FragmentMessage;
 import com.lnint.andos.tab.fragment.FragmentMy;

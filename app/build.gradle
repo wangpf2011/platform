@@ -46,4 +46,5 @@ dependencies {
     compile project(':library:ColorPicker')
     compile project(':library:ImagePicker')
     compile project(':corelib')
+    compile 'com.android.support:design:25.1.0'
 }

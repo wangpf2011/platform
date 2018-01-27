@@ -7,7 +7,6 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 
-import com.lnint.andos.tab.MainTabActivity;
 import com.lnint.corelib.BaseActivity;
 
 /**

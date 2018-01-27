@@ -7,8 +7,11 @@
         <activity android:name=".fragment.DynamicFragment1Activity"/>
         <activity android:name=".fragment.DynamicFragment2Activity"/>
 
-        <!-- SQL数据库操作demo-->
+        <!-- SQL数据库操作-->
         <activity android:name=".sqlite.SQLiteActivity"/>
+
+        <!-- 选项卡 -->
+        <activity android:name=".tabhost.CustTabActivity"/>
     </application>
 
 </manifest>
