@@ -19,4 +19,12 @@
         android:layout_alignParentTop="true"
         android:text="TabHost"/>
 
+    <Button
+        android:id="@+id/btn_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/btn_tabhost"
+        android:text="CoordinatorLayout+Behavior"/>
+
 </RelativeLayout>

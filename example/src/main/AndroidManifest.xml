@@ -12,6 +12,9 @@
 
         <!-- 选项卡 -->
         <activity android:name=".tabhost.CustTabActivity"/>
+
+        <!-- CoordinatorLayout+Behavior -->
+        <activity android:name=".behavior.ScrollingActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>
