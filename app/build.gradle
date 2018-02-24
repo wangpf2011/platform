@@ -9,12 +9,12 @@ android {
     defaultConfig {
         applicationId "com.lnint.andos"
         multiDexEnabled true
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         minSdkVersion 18
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-
+        //Espresso UI Test
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -26,6 +26,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //Espresso UI Test
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
 }
 
 dependencies {
@@ -34,6 +38,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.1.0'
     testCompile 'junit:junit:4.12'
     compile 'com.alibaba:fastjson:1.1.55.android'
     compile 'com.github.florent37:viewanimator:1.0.3'
@@ -46,5 +52,10 @@ dependencies {
     compile project(':library:ColorPicker')
     compile project(':library:ImagePicker')
     compile project(':corelib')
-    compile 'com.android.support:design:25.1.0'
+
+    //Espresso UI Test
+    androidTestCompile 'com.android.support.test:runner:0.2'
+    androidTestCompile 'com.android.support.test:rules:0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.1'
+    androidTestCompile 'com.android.support:support-annotations:25.1.0'
 }
