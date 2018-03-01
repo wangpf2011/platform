@@ -10,7 +10,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:contentDescription="@null"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/logo"/>
 
     <TextView
         android:id="@+id/picker_title"

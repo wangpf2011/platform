@@ -46,16 +46,15 @@ dependencies {
     compile project(':pickerview')
     compile project(':example')
     compile files('../libs/picasso-2.4.0.jar')
-    compile project(':citypicker')
     compile project(':library:WheelPicker')
     compile project(':library:FilePicker')
     compile project(':library:ColorPicker')
     compile project(':library:ImagePicker')
     compile project(':corelib')
-
     //Espresso UI Test
     androidTestCompile 'com.android.support.test:runner:0.2'
     androidTestCompile 'com.android.support.test:rules:0.2'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.1'
     androidTestCompile 'com.android.support:support-annotations:25.1.0'
+    compile project(':extraModules:citypicker')
 }

@@ -30,5 +30,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'org.xutils:xutils:3.3.36'
     compile project(':corelib')
-    compile files('../libs/fastjson-1.2.7.jar')
+    compile files('../../libs/fastjson-1.2.7.jar')
 }
