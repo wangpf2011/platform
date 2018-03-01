@@ -14,10 +14,10 @@ android {
 
 ext {
     isLibrary = true
-    pomArtifactId = "WheelPicker"
-    pomDescription = "wheel picker for android, include date picker, time picker, option picker, address picker, etc."
+    pomArtifactId = "ColorPicker"
+    pomDescription = "color picker for android"
 }
 
 dependencies {
-    compile project(':library:Commons')
+    compile project(':picker:Commons')
 }

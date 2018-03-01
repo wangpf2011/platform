@@ -14,11 +14,10 @@ android {
 
 ext {
     isLibrary = true
-    pomArtifactId = "ImagePicker"
-    pomDescription = "image picker for android, like qq image picker"
+    pomArtifactId = "FilePicker"
+    pomDescription = "file picker for android"
 }
 
 dependencies {
-    compile files('../../libs/picasso-2.4.0.jar')
-    compile project(':library:Commons')
+    compile project(':picker:Commons')
 }
