@@ -9,7 +9,6 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:contentDescription="@null"
         android:src="@mipmap/logo"/>
 
     <TextView
@@ -25,7 +24,6 @@
         android:id="@+id/picker_close"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:contentDescription="@null"
         android:src="@android:drawable/ic_menu_close_clear_cancel"/>
 
 </LinearLayout>

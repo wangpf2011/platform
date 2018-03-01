@@ -1,1 +1,1 @@
-include ':pickerview', ':library:Commons', ':library:ColorPicker', ':library:FilePicker', ':library:ImagePicker', ':library:WheelPicker', ':app', ':example', ':corelib', ':extraModules:xutils3', ':extraModules:citypicker'
+include ':library:Commons', ':library:ColorPicker', ':library:FilePicker', ':library:ImagePicker', ':library:WheelPicker', ':app', ':example', ':corelib', ':extraModules:pickerview', ':extraModules:xutils3', ':extraModules:citypicker'

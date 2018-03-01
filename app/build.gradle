@@ -43,7 +43,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.alibaba:fastjson:1.1.55.android'
     compile 'com.github.florent37:viewanimator:1.0.3'
-    compile project(':pickerview')
     compile project(':example')
     compile files('../libs/picasso-2.4.0.jar')
     compile project(':library:WheelPicker')
@@ -57,4 +56,5 @@ dependencies {
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.1'
     androidTestCompile 'com.android.support:support-annotations:25.1.0'
     compile project(':extraModules:citypicker')
+    compile project(':extraModules:pickerview')
 }
