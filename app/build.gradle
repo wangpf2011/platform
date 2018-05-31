@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
 
     useLibrary 'org.apache.http.legacy'
 
@@ -10,7 +10,7 @@ android {
         applicationId "com.lnint.andos"
         multiDexEnabled true
         minSdkVersion 18
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         //Espresso UI Test
@@ -37,9 +37,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:support-v13:26.1.0'
+    compile 'com.android.support:design:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:design:26.1.0'
     testCompile 'junit:junit:4.12'
     compile 'com.alibaba:fastjson:1.1.55.android'
     compile 'com.github.florent37:viewanimator:1.0.3'
@@ -50,7 +53,12 @@ dependencies {
     androidTestCompile 'com.android.support.test:runner:0.2'
     androidTestCompile 'com.android.support.test:rules:0.2'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.1'
-    androidTestCompile 'com.android.support:support-annotations:25.1.0'
+    androidTestCompile 'com.android.support:support-annotations:26.1.0'
     compile project(':extraModules:citypicker')
     compile project(':extraModules:pickerview')
+    compile project(':extraModules:retrofitrxjava')
+    compile project(':picker:WheelPicker')
+    compile project(':picker:ColorPicker')
+    compile project(':picker:ImagePicker')
+    compile project(':picker:FilePicker')
 }

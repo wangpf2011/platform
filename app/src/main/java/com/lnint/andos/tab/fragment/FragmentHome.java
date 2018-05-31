@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.lnint.andos.R;
 import com.lnint.example.behavior.ScrollingActivity;
 import com.lnint.example.tabhost.CustTabActivity;
+import com.wf.retrofit.RxJavaMainActivity;
 
 public class FragmentHome extends Fragment implements View.OnClickListener{
 	@Override
@@ -31,7 +32,7 @@ public class FragmentHome extends Fragment implements View.OnClickListener{
 				startActivity(intent);
 				break;
 			case R.id.btn_behavior:
-				Intent intent1 = new Intent(getActivity(), ScrollingActivity.class);
+				Intent intent1 = new Intent(getActivity(), RxJavaMainActivity.class);
 				startActivity(intent1);
 				break;
 		}

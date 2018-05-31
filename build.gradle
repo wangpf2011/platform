@@ -8,6 +8,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:2.3.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'
     }
 }
 
@@ -16,9 +17,8 @@ allprojects {
         jcenter() //bintray的maven库
         mavenCentral() //sonatype的maven库
         mavenLocal() //本地的maven库
-        maven {
-            url "https://www.jitpack.io" //jitpack的maven库
-        }
+        maven {url "https://www.jitpack.io"} //jitpack的maven库
+        maven {url 'https://maven.google.com'}
         flatDir {
             dirs 'libs' //本地aar文件
         }

@@ -15,7 +15,6 @@ import com.lnint.andos.tab.fragment.FragmentMy;
 import com.lnint.corelib.ActivityCollection;
 
 public class MainTabActivity extends FragmentActivity {
-	private String TAG = MainTabActivity.class.getName();
 	private long exitTime = 0;
 
 	public TabFragmentHost mTabHost;
