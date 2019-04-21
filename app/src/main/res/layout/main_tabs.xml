@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.lnint.andos.tab.TabFragmentHost xmlns:android="http://schemas.android.com/apk/res/android"
+<com.wf.andos.tab.TabFragmentHost xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/tabhost"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
@@ -33,4 +33,4 @@
         </TabWidget>
     </LinearLayout>
 
-</com.lnint.andos.tab.TabFragmentHost>
+</com.wf.andos.tab.TabFragmentHost>

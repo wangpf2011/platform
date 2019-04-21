@@ -7,7 +7,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "com.lnint.andos"
+        applicationId "com.wf.andos"
         multiDexEnabled true
         minSdkVersion 18
         targetSdkVersion 26

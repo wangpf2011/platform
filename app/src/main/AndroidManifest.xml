@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lnint.andos">
+    package="com.wf.andos">
 
     <!-- 这个权限用于进行网络定位-->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -40,7 +40,7 @@
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
-    <application android:name="com.lnint.andos.MainApplication"
+    <application android:name="com.wf.andos.MainApplication"
         android:allowBackup="true" android:label="@string/app_name"
         android:icon="@mipmap/logo" android:theme="@style/AppTheme">
         <activity android:name=".StartActivity"
