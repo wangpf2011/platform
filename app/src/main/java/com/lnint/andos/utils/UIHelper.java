@@ -10,7 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-import com.lnint.corelib.AppHelper;
+import com.wf.core.AppHelper;
 import com.lnint.andos.MainApplication;
 
 /**

@@ -25,10 +25,10 @@ import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
-import com.lnint.corelib.AppHelper;
-import com.lnint.corelib.widget.progressdialog.CustomProgressDialog;
-import com.lnint.corelib.utils.StringUtils;
-import com.lnint.corelib.utils.XmlUtils;
+import com.wf.core.AppHelper;
+import com.wf.core.widget.progressdialog.CustomProgressDialog;
+import com.wf.core.utils.StringUtils;
+import com.wf.core.utils.XmlUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

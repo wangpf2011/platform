@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.lnint.corelib.R;
+import com.wf.core.R;
 
 import java.util.HashMap;
 import java.util.List;

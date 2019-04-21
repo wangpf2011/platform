@@ -7,7 +7,7 @@ import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.lnint.corelib.R;
+import com.wf.core.R;
 
 /**
  * <P>自定义弹出式进度框</P>

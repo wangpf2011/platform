@@ -7,8 +7,8 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.lnint.corelib.utils.MethodsCompat;
-import com.lnint.corelib.utils.StringUtils;
+import com.wf.core.utils.MethodsCompat;
+import com.wf.core.utils.StringUtils;
 
 import java.io.File;
 

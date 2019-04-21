@@ -22,7 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.Scroller;
 import android.widget.TextView;
 
-import com.lnint.corelib.R;
+import com.wf.core.R;
 
 public class PullDownListView extends FrameLayout implements
 		GestureDetector.OnGestureListener, Animation.AnimationListener {

@@ -12,7 +12,7 @@ import com.lnint.andos.tab.TabFragmentHost;
 import com.lnint.andos.tab.fragment.FragmentHome;
 import com.lnint.andos.tab.fragment.FragmentMessage;
 import com.lnint.andos.tab.fragment.FragmentMy;
-import com.lnint.corelib.ActivityCollection;
+import com.wf.core.ActivityCollection;
 
 public class MainTabActivity extends FragmentActivity {
 	private long exitTime = 0;

@@ -7,7 +7,7 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 
-import com.lnint.corelib.BaseActivity;
+import com.wf.core.BaseActivity;
 
 /**
  * 欢迎界面

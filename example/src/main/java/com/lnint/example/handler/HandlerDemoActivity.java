@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.lnint.corelib.CustomHandler;
+import com.wf.core.CustomHandler;
 import com.lnint.example.R;
 
 /**

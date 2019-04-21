@@ -2,7 +2,7 @@ package com.lnint.andos.common.update;
 
 import android.util.Xml;
 
-import com.lnint.corelib.utils.StringUtils;
+import com.wf.core.utils.StringUtils;
 
 import org.xmlpull.v1.XmlPullParser;
 
