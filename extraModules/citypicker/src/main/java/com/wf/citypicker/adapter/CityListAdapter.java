@@ -1,4 +1,4 @@
-package com.lnint.citypicker.adapter;
+package com.wf.citypicker.adapter;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -9,11 +9,12 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.lnint.citypicker.R;
-import com.lnint.citypicker.model.City;
-import com.lnint.citypicker.model.LocateState;
-import com.lnint.citypicker.utils.PinyinUtils;
-import com.lnint.citypicker.view.WrapHeightGridView;
+import com.wf.citypicker.R;
+import com.wf.citypicker.model.City;
+import com.wf.citypicker.model.LocateState;
+import com.wf.citypicker.utils.PinyinUtils;
+import com.wf.citypicker.view.WrapHeightGridView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

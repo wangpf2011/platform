@@ -1,11 +1,11 @@
-package com.lnint.citypicker.db;
+package com.wf.citypicker.db;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 
-import com.lnint.citypicker.model.City;
+import com.wf.citypicker.model.City;
 
 import java.io.File;
 import java.io.FileOutputStream;

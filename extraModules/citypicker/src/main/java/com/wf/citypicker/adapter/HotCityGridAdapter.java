@@ -1,4 +1,4 @@
-package com.lnint.citypicker.adapter;
+package com.wf.citypicker.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.lnint.citypicker.R;
+import com.wf.citypicker.R;
 
 import java.util.ArrayList;
 import java.util.List;

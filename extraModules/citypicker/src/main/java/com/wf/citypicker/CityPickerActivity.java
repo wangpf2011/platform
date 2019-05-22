@@ -1,4 +1,4 @@
-package com.lnint.citypicker;
+package com.wf.citypicker;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,13 +18,14 @@ import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
-import com.lnint.citypicker.adapter.CityListAdapter;
-import com.lnint.citypicker.adapter.ResultListAdapter;
-import com.lnint.citypicker.db.DBManager;
-import com.lnint.citypicker.model.City;
-import com.lnint.citypicker.model.LocateState;
-import com.lnint.citypicker.utils.StringUtils;
-import com.lnint.citypicker.view.SideLetterBar;
+import com.wf.citypicker.adapter.CityListAdapter;
+import com.wf.citypicker.adapter.ResultListAdapter;
+import com.wf.citypicker.db.DBManager;
+import com.wf.citypicker.model.City;
+import com.wf.citypicker.model.LocateState;
+import com.wf.citypicker.utils.StringUtils;
+import com.wf.citypicker.view.SideLetterBar;
+
 import java.util.List;
 
 /**

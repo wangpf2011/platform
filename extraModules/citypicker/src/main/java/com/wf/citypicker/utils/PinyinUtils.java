@@ -1,4 +1,4 @@
-package com.lnint.citypicker.utils;
+package com.wf.citypicker.utils;
 
 import android.text.TextUtils;
 

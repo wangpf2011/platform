@@ -1,4 +1,4 @@
-package com.lnint.citypicker.view;
+package com.wf.citypicker.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

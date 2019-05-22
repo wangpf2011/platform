@@ -1,4 +1,4 @@
-package com.lnint.citypicker.model;
+package com.wf.citypicker.model;
 
 /**
  * author wangpf on 2016/1/26.
