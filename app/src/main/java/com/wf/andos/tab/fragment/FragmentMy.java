@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.wf.andos.picker.MainPickerActivity;
-import com.lnint.citypicker.CityPickerActivity;
+import com.wf.citypicker.CityPickerActivity;
 import com.wf.andos.R;
 
 public class FragmentMy extends Fragment {

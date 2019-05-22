@@ -3,7 +3,7 @@ package com.wf.andos;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.lnint.example.behavior.ScrollingActivity;
+import com.wf.example.behavior.ScrollingActivity;
 
 import org.junit.Rule;
 import org.junit.Test;

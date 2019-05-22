@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.wf.andos.R;
-import com.lnint.example.behavior.ScrollingActivity;
-import com.lnint.example.tabhost.CustTabActivity;
+import com.wf.example.behavior.ScrollingActivity;
+import com.wf.example.tabhost.CustTabActivity;
 import com.wf.retrofit.RxJavaMainActivity;
 
 public class FragmentHome extends Fragment implements View.OnClickListener{

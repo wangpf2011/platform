@@ -102,7 +102,7 @@ public class UIHelper {
 		if(AppHelper.UserId ==null || "".equals(AppHelper.UserId))  return;
 		if(msgCount <= 0) return;
 		
-		Intent intent = new Intent("com.lnint.workneed.msg.APPWIDGET_UPDATE");
+		Intent intent = new Intent("com.wf.workneed.msg.APPWIDGET_UPDATE");
 		intent.putExtra("msgCount", msgCount);
 		context.sendBroadcast(intent);
 	}

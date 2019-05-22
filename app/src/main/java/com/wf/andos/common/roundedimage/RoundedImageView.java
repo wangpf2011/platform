@@ -1,9 +1,3 @@
-/*
- * Copyright &copy; 2011-2020 lnint Inc. All right reserved.
- * 
- * 修改信息：【与SVN提交信息一致】
- * @author 王朋飞 2015年6月17日 下午5:14:07 
- */
 package com.wf.andos.common.roundedimage;
 
 import android.annotation.SuppressLint;
