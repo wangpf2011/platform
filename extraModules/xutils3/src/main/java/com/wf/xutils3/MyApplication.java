@@ -2,6 +2,7 @@ package com.wf.xutils3;
 
 import android.app.Application;
 
+import org.xutils.BuildConfig;
 import org.xutils.DbManager;
 import org.xutils.x;
 

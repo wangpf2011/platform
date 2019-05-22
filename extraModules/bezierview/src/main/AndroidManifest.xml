@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wf.bezierview">
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".WaveViewActivity" />
+        <activity android:name=".PageViewActivity" />
+        <activity android:name=".BezierCubicActivity" />
+        <activity android:name=".BezierQuadActivity" />
+        <activity android:name=".ChargeMonitorActivity" />
+        <activity android:name="com.wf.bezierview.base.CustomViewActivity" />
+        <activity android:name="com.wf.bezierview.base.ViewStubActivity" />
+    </application>
+</manifest>

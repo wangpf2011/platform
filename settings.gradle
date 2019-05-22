@@ -1,1 +1,1 @@
-include ':picker:Commons', ':picker:ColorPicker', ':picker:FilePicker', ':picker:ImagePicker', ':picker:WheelPicker', ':app', ':example', ':corelib', ':extraModules:pickerview', ':extraModules:xutils3', ':extraModules:citypicker', ':extraModules:retrofitrxjava'
+include ':picker:Commons', ':picker:ColorPicker', ':picker:FilePicker', ':picker:ImagePicker', ':picker:WheelPicker', ':app', ':example', ':corelib', ':extraModules:pickerview', ':extraModules:xutils3', ':extraModules:citypicker', ':extraModules:retrofitrxjava', ':extraModules:bezierview'

@@ -1,0 +1,45 @@
+<resources>
+    <declare-styleable name="WaveView">
+        <!--水位是否要上升-->
+        <attr name="rise" format="boolean"></attr>
+        <!--水波纹向右移动的时候执行的时间-->
+        <attr name="duration" format="integer"></attr>
+        <!--起始点的Y坐标-->
+        <attr name="originY" format="integer"></attr>
+        <!--水波纹的高度-->
+        <attr name="waveHeight" format="integer"></attr>
+        <!--水波纹的长度-->
+        <attr name="waveLength" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ChargeMonitorView">
+        <!--水波纹的高度-->
+        <attr name="monitorWaveHeight" format="integer"></attr>
+        <!--水波纹的长度-->
+        <attr name="monitorWaveLength" format="integer"></attr>
+        <!--水波纹填充颜色-->
+        <attr name="monitorWaveColor" format="color"></attr>
+        <!--水波纹起点X坐标偏移-->
+        <attr name="monitorWaveMoveTox" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalTextView">
+        <attr name="htextStr" format="string"/>
+        <attr name="htextColor" format="color"/>
+        <attr name="htextMarginLeft" format="dimension"/>
+        <attr name="himageWidth" format="dimension"/>
+        <attr name="himageHeight" format="dimension"/>
+        <attr name="himageSrc" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalTextView">
+        <attr name="vtextStr" format="string"/>
+        <attr name="vtextColor" format="color"/>
+        <attr name="vtextSize1" format="integer"/>
+        <attr name="vimageWidth" format="dimension" />
+        <attr name="vimageHeight" format="dimension" />
+        <attr name="vimageSrc" format="reference"/>
+        <attr name="vtextMarginTop" format="dimension" />
+        <attr name="vtextMarginBottom" format="dimension" />
+    </declare-styleable>
+</resources>

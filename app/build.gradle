@@ -61,4 +61,5 @@ dependencies {
     compile project(':picker:ColorPicker')
     compile project(':picker:ImagePicker')
     compile project(':picker:FilePicker')
+    compile project(':extraModules:bezierview')
 }

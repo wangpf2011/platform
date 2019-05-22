@@ -8,23 +8,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:onClick="buttonClick"
         android:text="加载图片"/>
     <Button
         android:id="@+id/btn_db"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:onClick="buttonClick"
         android:text="操作数据库"/>
     <Button
         android:id="@+id/btn_net"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:onClick="buttonClick"
         android:text="网络请求"/>
     <Button
         android:id="@+id/btn_appdown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:onClick="buttonClick"
         android:text="APP下载"/>
 </LinearLayout>
