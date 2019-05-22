@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
     android:background="#fff"
-    tools:context="com.lnint.example.behavior.ScrollingActivity">
+    tools:context="com.wf.example.behavior.ScrollingActivity">
 
     <ImageView
         android:id="@+id/scrolling_header"

@@ -30,5 +30,5 @@
         android:id="@+id/fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="com.lnint.example.fragment.StaticFragment" />
+        android:name="com.wf.example.fragment.StaticFragment" />
 </LinearLayout>
